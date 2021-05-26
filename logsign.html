@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Login / Sign - MIR Site</title>
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="image/faviconsm.png" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary"
+        style="background-image: url(image/waveup.png);background-size: cover;box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.13);border-radius: 0 0 30px 30px;">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="logoku">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="background-color: rgb(255, 255, 255); border-radius: 16px; padding: 5px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                                Home</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i> My
+                                Bio</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logsign.html">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                                Login / Sign Up</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="padding-top: 8px;">
+                        <a class="btn btn-outline-primary dropdown-toggle" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-angle-double-down"></i> Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.15);">
+                            <li><a class="dropdown-item" href="domSelection.html">Praktik - Dom Selection</a></li>
+                            <li><a class="dropdown-item" href="domSelectionMod.html">Latihan - Dom Selection</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- konten -->
+
+    <div class="container overflow-visible">
+        <div class="row" style="padding-top: 100px;margin-top: calc(var(--bs-gutter-y) * -1);">
+            <div class="col " style="padding-top: 25px;padding-bottom: 15px;">
+
+                <ul class=" nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active btn-block" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">LOGIN</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link btn-block" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">SIGN UP</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- jika login -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <form action="index.html" target="_blank" class="needs-validation" novalidate>
+                            <div class="text-center mb-3">
+                                <p>Sign in with:</p>
+                                <a href="https://id-id.facebook.com/login/web/" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button></a>
+
+                                <a href="https://accounts.google.com/servicelogin" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button></a>
+
+                                <a href="https://twitter.com/login" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button></a>
+
+                                <a href="https://github.com/login" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button></a>
+                            </div>
+
+                            <p class="text-center">or :</p>
+                            <div class="form-floating mb-3">
+
+                                <input type="email" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your email or username
+                                </div>
+                                <label class="form-label" for="floatingInput validationCustom01">Email or
+                                    Username</label>
+                            </div>
+
+
+                            <div class="form-floating">
+                                <input type="password" class="form-control"
+                                    id="myInput floatingPassword validationCustom02" placeholder="Password" required>
+                                <div class="invalid-feedback">
+                                    Please enter the password
+                                </div>
+                                <label for="floatingPassword">Password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="row mb-4">
+                                <div class="col-md-6 d-flex justify-content-center " style="margin-top: 20px;">
+
+                                    <div class="form-check mb-3 mb-md-0">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label  > Remember me </label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-flex justify-content-center" style="margin-top: 20px;">
+                                    <!-- Simple link -->
+                                    <a href="">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <div class="text-center d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <!-- jika register -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <form action="index.html" target="_blank" class="needs-validation" novalidate>
+                            <div class="text-center mb-3">
+                                <p>Sign up with:</p>
+                                <a href="https://id-id.facebook.com/login/web/" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button></a>
+
+                                <a href="https://accounts.google.com/servicelogin" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button></a>
+
+                                <a href="https://twitter.com/login" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button></a>
+
+                                <a href="https://github.com/login" target="_blank"><button type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button></a>
+                            </div>
+
+                            <p class="text-center">or :</p>
+
+
+                            <div class="form-floating mb-3">
+
+                                <input type="text" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your full name
+                                </div>
+                                <label class="form-label" for="floatingInput validationCustom01">Full Name</label>
+                            </div>
+
+
+
+
+
+
+                            <div class="form-floating mb-3">
+
+
+                                <input type="text" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <label class="form-label" for="floatingInput validationCustom01">Username</label>
+                                <div class="invalid-feedback">
+                                    Please enter your username
+                                </div>
+
+
+                            </div>
+
+                            <div class="form-floating mb-3">
+
+                                <input type="email" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your email address
+                                </div>
+                                <label class="form-label" for="floatingInput validationCustom01">Email Address</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+
+                                <input type="password" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your password
+                                </div>
+                                <label class="form-label" for="floatingInput validationCustom01">Password</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+
+                                <input type="password" class="form-control" id="floatingInput validationCustom01"
+                                    placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your repeat password
+                                </div>
+                                <label class="form-label" for="floatingInput validationCustom01">Repeat Password</label>
+                            </div>
+
+
+                            <div class="row mb-4">
+                                <div class="col-md d-flex justify-content-center " style="margin-top: 20px;">
+                                    <!-- Checkbox -->
+                                    <div class="form-check mb-3 mb-md-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck"> I have read and agree to the
+                                            terms </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- Button trigger modal -->
+                            <div class="text-center d-grid gap-2">
+                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Sign Up</button>
+                            </div>
+                            <!-- untuk ini belums sempurna validasi, jika benar maka akan menampilkan pop up -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Registration Notification
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Press <a role="button" class="btn btn-primary popover-test"
+                                                    data-bs-content="Popover body content is set in this attribute.">Ok</a>
+                                                to continue</p>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Press <a role="button" class="btn btn-secondary popover-test"
+                                                    data-bs-content="Popover body content is set in this attribute.">Back</a>
+                                                to go back</p>
+                                            <p class="fst-italic font-monospace fs-6 text-decoration-underline"> Check
+                                                and complete if there is a filling error</p>
+                                        </div>
+
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Back</button>
+                                            <a href="index.html"> <button type="button"
+                                                    class="btn btn-primary">Ok</button></a>
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </form>
+
+                        <!-- scriptnya validasi form-->
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function () {
+                                'use strict'
+
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.querySelectorAll('.needs-validation')
+
+                                // Loop over them and prevent submission
+                                Array.prototype.slice.call(forms)
+                                    .forEach(function (form) {
+                                        form.addEventListener('submit', function (event) {
+                                            if (!form.checkValidity()) {
+                                                event.preventDefault()
+                                                event.stopPropagation()
+                                            }
+
+                                            form.classList.add('was-validated')
+                                        }, false)
+                                    })
+                            })()
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-top: -76px;">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,64L40,85.3C80,107,160,149,240,176C320,203,400,213,480,197.3C560,181,640,139,720,122.7C800,107,880,117,960,149.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+    <!-- footer akhir -->
+    <footer>
+        <p class="text-center" style="background-color: #0099ff;color: #fff;margin-bottom: 0rem;margin-top: -2px;"><i
+                class="far fa-compass fa-spin"></i> <b><u>M I R Site.</i></u></b> <i class="fas fa-fan fa-spin"></i></p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Midoriya - MIR Site</title>
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="image/faviconsm.png" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary"
+        style="background-image: url(image/waveup.png);background-size: cover;box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.13);border-radius: 0 0 30px 30px;">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="logoku">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="background-color: rgb(255, 255, 255); border-radius: 16px; padding: 5px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                                Home</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i> My
+                                Bio</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logsign.html">
+                            <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                                Login / Sign Up</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="padding-top: 8px;">
+                        <a class="btn btn-outline-primary dropdown-toggle" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-angle-double-down"></i> Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.15);">
+                            <li><a class="dropdown-item" href="domSelection.html">Praktik - Dom Selection</a></li>
+                            <li><a class="dropdown-item" href="domSelectionMod.html">Latihan - Dom Selection</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- konten -->
+
+    <div class="container ">
+        <div style="padding-top: 100px;margin-top: calc(var(--bs-gutter-y) * -1);">
+
+            <section
+                style="box-shadow: 0 9px 30px 6px rgba(0, 0, 0, 0.15);;padding: 15px;border-radius: 30px;background-color: rgb(255, 255, 255);">
+                <!-- carousel slide -->
+                <div id="carouselExampleIndicators" class="carousel slide justify-content-center"
+                    data-bs-ride="carousel" style="width: 80%;left: 10%;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/midoriya1.jpg" class="img-fluid mx-auto d-block d-block w-100"
+                                alt="midoriya1" style="box-shadow: 1px 12px 6px rgba(4, 4, 4, 0.15);">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/midoriya2.jpg" class="img-fluid mx-auto d-block d-block w-100"
+                                alt="midoriya2" style="box-shadow: 1px 12px 6px rgba(4, 4, 4, 0.15);">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/midoriya3.jpg" class="img-fluid mx-auto d-block d-block w-100"
+                                alt="midoriya3" style="box-shadow: 1px 12px 6px rgba(4, 4, 4, 0.15);">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <p class="fw-light fs-3 text-center">-MY HERO ACADEMIA-</p>
+                <p class="fw-bold fs-1 text-center">IZUKU MIDORIYA</p>
+
+                <p class="lh-base"><br>
+                    <b>Izuku Midoriya (緑 み ど り 谷 や 出 い ず 久 く Midoriya Izuku)</b>, juga dikenal sebagai
+                    Deku, adalah protagonis utama My Hero Academia.
+
+                    Meskipun lahir tanpa Quirk, ia berhasil mendapat perhatian pahlawan legendaris All Might karena
+                    kepahlawanannya dan sejak itu menjadi murid dekatnya dan juga seorang siswa di SMA U.A. All Might
+                    mewariskan quirknya kepada Izuku, membuat Izuku menjadi pemilik kesembilan dari Quirk One For All.
+                </p>
+
+
+                <p class="h4 fw-bolder text-decoration-underline">PENAMPILAN</p>
+                </p>
+                <p class="lh-base">Zuku memiliki mata hijau bulat, rambut hijau gelap berantakan dengan bayangan hitam,
+                    dan empat bintik simetris di kedua pipi di bawah matanya. Selama masa SMP-nya, ia mengenakan seragam
+                    gakuran hitam dengan kancing kuning, ditemani sepatu putih polos. Saat di rumah, ia mengenakan
+                    jinbei hijau di atas kemeja putih dan celana olahraga abu-abu.</p>
+
+                <p class="lh-base">Di U.A., dia memakai seragam laki-laki standar: jaket abu-abu terang di atas kemeja
+                    putih dan celana hijau gelap, bersama dengan dasi merah yang tidak diikatnya dengan benar,
+                    membuatnya lebih pendek dari yang seharusnya. Izuku biasanya memakai sepatu bot merah kebesaran.</p>
+                <p class="lh-base">Ketika ia masih muda, dua puluh empat tahun yang lalu, rambut Garp dan jenggot
+                    masih
+                    hitam, dengan brewok nya mulai memutih. Dia juga mengenakan setelan breasted ganda lebih gelap
+                    dengan kemeja putih dan dasi merah, tapi dia sudah memiliki bekas luka di sekitar mata kirinya.
+                </p>
+                <p class="lh-base">Meskipun pada awalnya sangat kurus, Izuku telah mendapatkan otot-ototnya berkembang
+                    dengan baik setelah sepuluh bulan pelatihan dengan All Might. Seiring berjalannya waktu, terlihat
+                    bahwa tubuh Izuku terus menjadi lebih berotot dan menonjol. Izuku sering digambarkan sebagai sosok
+                    yang sangat polos.</p>
+                <p class="lh-base">Kostum Pahlawan pertama Izuku adalah jumpsuit yang dominan berwarna hijau dengan
+                    sabuk merah, bantalan siku, bantalan lutut, dan sarung tangan, bersama dengan sepatu bot merahnya.
+                    Dia juga mengenakan topeng dengan tonjolan seperti telinga panjang yang menyerupai rambut All Might,
+                    dan respirator dengan senyuman di atasnya. Kostumnya rusak parah setelah latihan pertempuran Izuku
+                    dengan Katsuki Bakugo dan harus diperbaiki.</p>
+                <p class="lh-base">Selama USJ Arc, sementara kostumnya sedang diperbaiki, Izuku mengenakan seragam
+                    olahraga U.A.: seragam olahraga biru dengan garis-garis putih tebal di atas tubuh bagian atas dan
+                    kakinya, yang membentuk huruf "UA". Dia juga membeli respirator pengganti.</p>
+                <p class="lh-base">Kostum Pahlawan kedua Izuku memiliki beberapa perubahan, dan meskipun beberapa aspek
+                    asli dibawa, sekarang terlihat lebih kuat dan lebih efisien dalam penampilan. Kostum keduanya adalah
+                    jumpsuit full-body hijau gelap dengan sepatu bot dan bantalan siku merah yang sama. Bantalan lutut
+                    telah diperluas ke kakinya dan mencapai pahanya. Sarung tangan barunya berwarna krem, dan memiliki
+                    garis-garis biru menghiasi mereka. Respiratornya sekarang terbuat dari logam, berbentuk berlian, dan
+                    memiliki dua lubang di bagian atas dan bawah, dari kiri ke kanan.</p>
+                <p class="lh-base">Selama Arc Lisensi Pahlawan, Izuku telah meningkatkan kostumnya agar sesuai dengan
+                    Shoot Style-nya dengan menambahkan sol besi ke sepatu merahnya untuk meningkatkan kekuatan
+                    tendangannya, dan memperluas sarung tangannya dan menambahkan penguat lengan untuk menjaga lengannya
+                    agar tidak patah dan menyebabkan kerusakan lebih lanjut. Bantalan lututnya sekarang memiliki baut
+                    kuning yang diikatkan ke mereka. Kemudian, Mei Hatsume membuat sarung tangan mesin untuk lebih baik
+                    membantunya menggunakan kekuatannya tanpa menempatkan beban di lengannya.</p>
+                <p class="lh-base">Setelah pertarungannya dengan Shoto Todoroki, jari-jari di tangan kanannya menjadi
+                    sedikit cacat, dan dia mendapat dua bekas luka di sisi tangannya. Lengan kanannya semakin rusak
+                    setelah pertarungannya dengan Muscular, meninggalkan banyak bekas luka di sekitarnya.</p>
+
+                <p class="h4 fw-bolder text-decoration-underline">KEPRIBADIAN</p>
+                <p class="lh-base">Izuku adalah anak laki-laki yang sangat pemalu, suka menolong dan sopan, sering
+                    bereaksi berlebihan terhadap situasi abnormal dengan ekspresi berlebihan. Karena ditindas sejak
+                    kecil dan dilahirkan tanpa quirk, ia awalnya digambarkan menjadi lebih pendiam dan tidak ekspresif
+                    terhadap diri sendiri, terutama di depan Katsuki Bakugo, yang terus-menerus menundukkannya karena
+                    cita-citanya menjadi Hero. Namun, setelah diterima di U.A. High School, membuat teman baru dan
+                    menghadapi Katsuki selama Arc Latihan Pertarungan, dia secara bertahap berubah menjadi orang yang
+                    lebih percaya diri dan berani, sampai-sampai mengembangkan beberapa keterampilan kepemimpinan.</p>
+                <p class="lh-base">Izuku juga sangat rajin dan berkemauan keras. Impiannya menjadi Hero mendorongnya
+                    untuk memiliki kebiasaan menuliskan catatan tentang semua hal yang dia tahu tentang klebiasaan Hero.
+                    Karena kebiasaan ini, Izuku telah mengembangkan pikiran analitis yang hebat dan dengan mudah mampu
+                    membentuk rencana pertempuran yang rumit dalam hitungan detik, memanfaatkan keuntungan dari musuh
+                    dan musuh-musuhnya untuk menggerakkan mereka. Izuku mengekspresikan pengamatannya melalui gumaman
+                    yang tak ada habisnya, kebiasaan yang dianggap mengganggu dan atau menakut-nakuti teman-temannya.
+                    Izuku sering menuliskan pengamatannya dalam sebuah buku catatan yang ia sebut sebagai Analisis
+                    Pahlawan untuk Masa Depan. </p>
+                <p class="lh-base">Izuku adalah orang yang peduli, dan tidak akan pernah ragu untuk menyelamatkan
+                    seseorang dalam bahaya, bahkan jika dia tahu bahwa dia tidak cukup kuat untuk melakukannya.
+                    Seringkali, dia melakukan ini dengan nekat, mengambil tindakan yang lebih ceroboh dari pemikiran
+                    berlebihan yang biasa ia lakukan. Izuku juga terbukti tidak mementingkan diri sendiri untuk mencoba
+                    membantu orang-orang dengan masalah pribadi dan emosional. Semangat heroik Izuku diakui oleh banyak
+                    orang, membuatnya mendapatkan loyalitas dan terima kasih dari karakter yang sebelumnya antagonis
+                    kepadanya seperti Tenya Iida, Shoto Todoroki, dan Kota Izumi. </p>
+                <p class="lh-base">Dari semua Hero, All Might Sang Simbol Perdamaian adalah salah satu yang memiliki
+                    pengaruh paling besar dalam hidupnya, mantan Pahlawan Nomor Satu tersebut telah membentuk sebagian
+                    besar tujuan dan keyakinan yang diikuti Izuku sejak kecil. Banyak keputusan dan tindakan Izuku yang
+                    terinspirasi oleh keinginannya untuk menjadi Pahlawan yang mirip dengan All Might, dan dengan
+                    demikian ia memiliki pengabdian yang besar untuknya, sampai mengumpulkan berbagai pernak-pernik yang
+                    terkait dengan All Might dan meniru beberapa sifatnya . Setelah mewarisi quirk All Might, salah satu
+                    prioritas Izuku saat ini adalah untuk dapat menguasai warisan idolanya, karena dia selalu mencari
+                    cara untuk meningkatkan penggunaan One For All-nya, menyadari tekanan besar untuk menggantikan
+                    Pahlawan terhebat sepanjang waktu. </p>
+                <p class="lh-base">Izuku tampaknya memiliki sisi kurang ajar dan kasar padanya yang sebagian besar
+                    muncul ketika dirinya dalam pertempuran. Sisi ini membuatnya bertindak lebih seperti Katsuki,
+                    menjadi agak keras dan tak tergoyahkan, dan juga memiliki dorongan kuat menuju kemenangan. Dia
+                    mengklaim bahwa ini karena dia melihat Katsuki sebagai perwujudan dari seseorang yang berjuang untuk
+                    kemenangan. Dia juga mengakui bahwa dia sangat tidak menyukai sisi ini, dan cenderung untuk tetap
+                    mengevaluasinya </p>
+
+                <p class="h4 fw-bolder text-decoration-underline">QUIRK DAN KEMAMPUAN</p>
+                <p class="lh-base">One For All (ル ン フ フ ー ・ オ ー ル Wan Fō Ōru?): Diberikan kepadanya dari Toshinori Yagi,
+                    quirk yang memberi Izuku akses ke kekuatan yang ditimbun, memberinya kekuatan manusia super dan
+                    meningkatkan kelincahan dan mobilitas dengan menyebarkan kekuatannya ke seluruh tubuh. Meskipun ia
+                    belum menunjukkan kecepatan manusia super, refleks luar biasa, dan daya tahan pada level All Might,
+                    Izuku telah terbukti mampu mengendalikan sebagian kecil dari kekuatan One For All, menggunakannya
+                    untuk meningkatkan kekuatan, kecepatan, dan kelincahannya. Jika Izuku tidak mengendalikan One For
+                    All di bawah batasnya saat ini sebesar 20%, tubuhnya dapat sangat rusak oleh kekuatannya. Izuku juga
+                    memiliki koneksi mental kepada pengguna One For All sebelumnya. </p>
+                <p class="lh-base">Baru-baru ini, refleks dan kecepatan Izuku telah meningkat dengan penggunaan One For
+                    All, mampu mempertahankan posisinya melawan berbagai serangan yang masuk selama Ujian Lisensi
+                    Sementara. Kontrol Izuku pada One For All telah meningkat karena maksimumnya saat ini adalah 20%
+                    dari kekuatan One For All saat berada dalam Full Cowl, pada saat Festival Budaya U.A </p>
+
+                <p class="h4 fw-bolder text-decoration-underline">GERAKAN</p>
+                <ul>
+                    <li>
+                        <p class="lh-base"><b>Detroit Smash</b> (デトロイトスマッシュ Detoroito Sumasshu): Sama seperti langkah
+                            All
+                            Might, kecuali Izuku melakukannya dalam bentuk pukulan uppercut.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="lh-base"><b>Delaware Smash</b> (デ ラ ウ エ ア ス マ ッ シ ュ Derauea Sumasshu): Izuku
+                            menjentikkan
+                            jarinya untuk menciptakan gelombang kejut tekanan angin kuat yang memiliki kekuatan yang
+                            cukup untuk memecahkan potongan besar es. Karena menggunakan serangan ini pada 100%, Izuku
+                            membatasi menggunakan gerakan ini tanpa melukai dirinya sendiri hingga sepuluh kali.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="lh-base"><b>One For All: Full Cowl</b> (ワ ン ・ フ ォ ー ・ オ ー ル フ ル カ ウ ル Wan Fō Ōru Furu
+                            Kauru?): Melalui pelatihannya bersama Gran Torino, Izuku mampu mendapatkan kontrol yang
+                            lebih baik dari Quirknya. Teknik ini memungkinkan Izuku untuk mengaktifkan 20% (sebelumnya
+                            5% yang kemudian ditingkatkan menjadi 8%) dari One For All di seluruh tubuhnya, membiarkan
+                            aliran daya dan mengalir melaluinya, bukan berkonsentrasi di satu lokasi. Menurut Izuku,
+                            teknik ini memberinya kemampuan manuver yang lebih besar. Mengaktifkan teknik ini memberinya
+                            kekuatan, kecepatan, mobilitas, dan kelincahan yang ditingkatkan. Itu juga mencegahnya
+                            mematahkan tulang ketika menyerang. </p>
+                    </li>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>5% Detroit Smash</b> (5 パ ー セ ン ト デ ト ロ イ ト ス マ ッ シ ュ 5 Pāsento
+                                Detoroito
+                                Sumasshu): Izuku mengaktifkan One for All: Full Cowl pada 5% kemudian melompat ke udara
+                                dan memberikan pukulan ke bawah yang ditingkatkan ke lawan. Dia juga menggunakan gerakan
+                                ini dalam bentuk pukulan lurus ke depan.</p>
+                        </li>
+                    </ul>
+                </ul>
+                </li>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>Delaware Smash Air Force</b> (デ ラ ウ エ ア ス マ ッ シ ュ エ ア フ ォ ー ス ス
+                                Deraruea
+                                Sumasshu Eafosu): Izuku menggunakan sarung tangannya yang ditingkatkan oleh Mei Hatsume
+                                untuk mengarahkan ledakan udara terkompresi melawan musuhnya, memiliki kekuatan yang
+                                cukup untuk menyengat Gentle saat dia berada di udara , memberi Izuku celah untuk
+                                menyusulnya. Dengan menggunakan kelima jarinya, ia dapat meluncurkan hingga empat
+                                Delaware Smashes secara bersamaan.</p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>One For All: Full Cowl - Shoot Style</b> (ワ ン フ ォ ー オ ー ル フ ル カ ウ ル シ
+                                ュ ー ト ス
+                                タ イ ル Wan Fō Ōru Furu Kauru Shūto Sutairu): Saat menggunakan One For All: Full Cowl,
+                                Izuku menggunakan gaya bertarung yang lebih berfokus pada tendangan. Izuku memusatkan
+                                efek One For All: Full Cowl dalam tubuh dan kakinya daripada lengannya, memungkinkan dia
+                                untuk mengalirkan lebih banyak kekuatan karena fakta bahwa otot-otot kaki manusia secara
+                                alami lebih kuat daripada otot lengan manusia, memberinya cukup kekuatan dan stabilitas
+                                dan memungkinkan dia untuk keluar dari belenggu harus meniru All Might. </p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                <p class="lh-base"><b>Shoot Style: St. Louis Smash</b> (シ ュ ー ト ス タ イ ル セ ン ト ル イ ス ス マ
+                                    ッ シ ュ
+                                    Shūto Sutairu Sento Ruisu Sumasshu) Sementara menggunakan Shoot Style, Izuku
+                                    melompat ke udara dan sebelum berayun untuk memberikan tendangan ke wajah lawan.
+                                    Izuku menggunakan langkah ini untuk melumpuhkan Gentle Criminal.</p>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>One For All: Full Cowl - 100%</b> (ワ ン · フ ォ ー · オ ー ル フ ル カ ウ ル 100%
+                                パ ー セ ン
+                                ト Wan Fo Oru Furu Kauru 100 Pāsento): Izuku mengaktifkan One For All ke batas yang
+                                paling penuh, memberikan dia dorongan luar biasa dalam kecepatan dan kekuatan yang
+                                memungkinkan dia untuk dengan mudah membuat Kai Chisaki kewalahan. Ini pertama kali
+                                digunakan melawan Chisaki untuk melindungi Eri. Peningkatan kekuatan membuat rambutnya
+                                berwarna terang. Dia saat ini hanya dapat menggunakannya tanpa kerusakan pada tubuhnya
+                                saat melakukan kontak fisik dengan Eri.</p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>One For All: Full Cowl - 20%</b>: Izuku menggunakan 20% dari satu
+                                untuk
+                                kekuatan penuh Semua dan mendistribusikan ke seluruh tubuhnya, memberinya kekuatan dan
+                                kecepatan yang lebih besar meningkatkan. Meskipun tidak akan menyebabkan
+                                tulang-tulangnya untuk istirahat, itu meletakkan beban besar pada tubuh Izuku,
+                                menyebabkan dia sakit besar ke titik yang rasanya seperti tulang-tulangnya berada di
+                                ambang melanggar.</p>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                <p class="lh-base"><b>Manchester Smash</b> (マ ン チ ェ ス タ ー ス マ ッ シ ュ Manchesutā
+                                    Sumasshu): Izuku
+                                    melompat ke udara dan membalik ke depan untuk meluncurkan tendangan di atas
+                                    lawannya. Meskipun Chisaki berhasil menghindarinya, itu menghancurkan tanah dengan
+                                    parahj sehingga Chisaki tidak dapat membalas dengan Quirk Overhaulnya.</p>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="lh-base"><b>One For All 100%</b>: Sebuah teknik yang memungkinkan Izuku menyerang
+                            menggunakan
+                            kekuatan penuh Satu Untuk Semua di bagian tubuh yang diinginkan, dengan biaya bagian tubuh
+                            yang disebut hancur saat eksekusi. Penggunaan lebih lanjut dari anggota tubuh yang sama
+                            setelah serangan awal dapat menyebabkan jaringan parut, seperti yang terlihat dengan
+                            perkelahiannya melawan Shoto Todoroki (menyebabkan Izuku untuk menjalani operasi di tangan
+                            kanannya karena cedera) dan otot (meninggalkan banyak bekas luka di lengan kanannya).</p>
+                    </li>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>100% Detroit Smash</b> (100 パ ー セ ン ト デ ト ロ イ ト ス マ マ ッ ュ ュ 100
+                                Pāsento
+                                Detoroito Sumasshu): Izuku mengaktifkan One For All pada 100% di lengannya dan kemudian
+                                menyerang targetnya dengan pukulan yang menerjang.</p>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <p class="lh-base"><b>1.000.000% Delaware Detroit Smash </b>(1000000 パ ー セ ン ト デ ト ロ イ ト デ ラ
+                                ウ ウ エ
+                                ア ス マ ッ シ ュ 1000000 Pāsento Derauea Detoroito Sumasshu): Izuku mengaktifkan One For All
+                                pada 100% kemudian menyerang lawannya dengan serangan ayunan penuh. Saat melakukan
+                                gerakan, Izuku pertama-tama menggunakan Delaware Smash yang berkekuatan penuh, lalu
+                                memberikan Detroit Smash yang menghancurkan.</p>
+                    </ul>
+                </ul>
+            </section>
+        </div>
+    </div>
+    </div>
+
+
+    <hr>
+    <!-- footer -->
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0099ff" fill-opacity="1"
+                d="M0,64L40,85.3C80,107,160,149,240,176C320,203,400,213,480,197.3C560,181,640,139,720,122.7C800,107,880,117,960,149.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+
+        <p class="text-center" style="background-color: #0099ff;color: #fff;margin-bottom: 0rem;margin-top: -2px;"><i
+                class="far fa-compass fa-spin"></i> <b><u>M I R Site.</i></u></b> <i class="fas fa-fan fa-spin"></i></p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <a href="#" class="ignielToTop"></a>
+</body>
+
+</html>
